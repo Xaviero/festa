@@ -1,0 +1,122 @@
+.fondo{
+	
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	z-index: 1;
+	
+	
+}
+.centrar{
+	/*-La Festa-*/
+
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+.a1{
+	/*-los iconos de menu, favoritos y recomendados-*/
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin-right: 20px;
+}
+.a2{
+	/*-los iconos de usuario-*/
+	width: 11%;
+	height: 11%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin-right: 20px;
+}
+.b1{
+	/*-La Festa en el encabezado-*/
+	width: 35%;
+	height: 65%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+
+}
+
+.logotipo{
+/*-Ususario-*/
+	width: 65%;
+	height: 15%;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin-top: 100px;
+}
+.c2{
+/*-Imagenes de las resetas-*/
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}	
+.c3{
+	/*-La Festa-*/
+
+	width: 100%;
+	height: 93%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.d1{
+	/*-La Festa-*/
+
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+.c1{
+	/*-Las imagenes de las resetas-*/
+	width: 100%;
+	height: 55%;
+	 
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin-top: 150px ;
+}
+.centrar1{
+	/*-La Festa-*/
+	width: 100%;
+	height: 92%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}

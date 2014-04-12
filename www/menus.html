@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
+
+        <!-- Hojas de estilo -->
+            <link rel="stylesheet" href="css/lungo.css">
+            <link rel="stylesheet" href="css/lungo.icon.css">
+            <link rel="stylesheet" href="css/lungo.theme.css">
+            <link rel="stylesheet" href="css/hoja.css">
+            <link rel="stylesheet" type="text/css" href="css/index.css">
+
+        <!-- Script -->
+            <script src="js/quo.js"></script>
+            <script src="js/lungo.js"></script>
+
+        <title>Hello World</title>
+    </head>
+    <body class="app">
+
+        <section id="menus" data-transition="fade">
+
+            <!-- Encabezado -->
+                <header >   <img src="./img/logo1.png" class="b1"> 
+                    <nav>
+                            <button data-view-aside="menu" data-icon="menu"></button>
+                    </nav>
+                    <nav class="on-right">
+                        <button data-view-aside="um" data-icon="user"></button>    
+                    </nav> 
+
+                       
+                </header>
+
+             <!-- Cuerpo -->
+
+                <article id="main-article" class="active indented ">
+
+                        <img src="./img/fondom.png" class="fondo">
+
+                        <ul>
+                            <!-- Carne -->
+                                <li></li>
+                                <li></li> 
+                                <li></li>
+                                <li></li>
+                                <li></li>  
+                                <li style="margin-left:15px;">   
+                                    
+                                    
+                                    <img src="./img/carne1.png" id="carne" style="position:relative;z-index: 2;"  >
+                                    <!-- Mariscos -->
+                                    <img src="./img/mariscos1.png" id="mariscos" style="position:relative;z-index: 2;">
+                                     <!-- Pastas -->
+                                    <img src="./img/pasta1.png" id="pastas" style="position:relative;z-index: 2;">
+                                    <!-- Postres -->
+                                    <img src="./img/postre1.png" id="postres" style="position:relative;z-index: 2;">
+                                </li>                    
+                        </ul>
+
+                </article>
+
+
+        </section>
+                
+             <!-- Menu -->   
+        <aside id="menu">
+            <header data-title="Navegar"  class="extender"></header>
+                <article id="menus-article" class="active list indented">
+                        <ul>
+                                <!-- te regresa al menu -->
+                                <li data-view-section="menus"><img src="./img/home1.png" class="a1"> HOME</li>
+                                <!-- te manda a favoritos -->
+                                <li data-view-section="favoritos"><img src="./img/fav.png" class="a1">FAVORITOS</li>
+                                <!-- te manda a recomendados -->
+                                <li data-view-section="recomendados"> <img src="./img/recom.png" class="a1">RECOMENDADOS</li>
+                                <!-- te manda al usuario 
+                                <li data-view-section="usuarios"> <img src="./img/user-01.png" class="a2">USUARIOS</li>-->
+                               
+                                    
+                        </ul>
+                </article>
+        </aside>
+
+         <!-- Usuario -->   
+        <aside id="um" data-transition="right">
+            <header data-title="Usuario"  class="extender"></header>
+                <article id="menus-article" class="active list indented">
+                        <ul>
+                              <li>Nombre:</li>
+                              <li>Correo:</li>
+                              <li>Telefono:</li>
+                                    
+                        </ul>
+                </article>
+        </aside>
+
+    </body>
+</html>

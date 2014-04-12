@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
+
+        <!-- Hojas de estilo -->
+            <link rel="stylesheet" href="css/lungo.css">
+            <link rel="stylesheet" href="css/lungo.icon.css">
+            <link rel="stylesheet" href="css/lungo.theme.css">
+            <link rel="stylesheet" href="css/hoja.css">
+            <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    
+
+        <title>Hello World</title>
+    </head>
+    <body >
+
+        <section id="main" data-transition="fade">
+
+            <article id="main-article">
+
+            <center> <img src="./img/fondo3.png" id="logotipo" class="centrar"/> </center>
+
+            </article> 
+        </section>
+                
+
+            <!-- Script -->
+            <script src="js/quo.js"></script>
+            <script src="js/lungo.js"></script>
+
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+            Lungo.init({
+                     name: 'hello-world',
+                     resources:['menus.html','favoritos.html','recomendados.html','usuarios.html','carne.html','mariscos.html','pastas.html','postres.html','platillocarne1.html','platillocarne2.html','platillocarne3.html','platillomariscos1.html','platillomariscos2.html','platillomariscos3.html','platillopostres1.html','platillopostres2.html','platillopostres3.html','platillopastas1.html','platillopastas2.html','platillopastas3.html','registro.html','um.html']
+                });
+            //Codigo de Click
+                Lungo.dom('#logotipo').on('click',function(event){
+                    Lungo.Router.section("usuarios");
+
+                });
+                                    Lungo.dom('#carne').on('click',function(event){
+                    Lungo.Router.section("carne");
+
+                });
+                                    Lungo.dom('#mariscos').on('click',function(event){
+                    Lungo.Router.section("mariscos");
+
+                });
+                                    Lungo.dom('#pastas').on('click',function(event){
+                    Lungo.Router.section("pastas");
+
+                });
+                                    Lungo.dom('#postres').on('click',function(event){
+                    Lungo.Router.section("postres");
+
+                });
+                                    Lungo.dom('#platillocarne1').on('click',function(event){
+                    Lungo.Router.section("platillocarne1");
+
+                });
+                                   Lungo.dom('#platillocarne2').on('click',function(event){
+                    Lungo.Router.section("platillocarne2");
+
+                });
+                                    Lungo.dom('#platillocarne3').on('click',function(event){
+                    Lungo.Router.section("platillocarne3");
+
+                }); 
+                                    Lungo.dom('#platillomariscos1').on('click',function(event){
+                    Lungo.Router.section("platillomariscos1");
+
+                }); 
+                                    Lungo.dom('#platillomariscos2').on('click',function(event){
+                    Lungo.Router.section("platillomariscos2");
+
+                });   
+                                    Lungo.dom('#platillomariscos3').on('click',function(event){
+                    Lungo.Router.section("platillomariscos3");
+
+                }); 
+                                    Lungo.dom('#platillopostres1').on('click',function(event){
+                    Lungo.Router.section("platillopostres1");
+
+                }); 
+                                    Lungo.dom('#platillopostres2').on('click',function(event){
+                    Lungo.Router.section("platillopostres2");
+
+                });   
+                                    Lungo.dom('#platillopostres3').on('click',function(event){
+                    Lungo.Router.section("platillopostres3");
+
+                }); 
+                                    Lungo.dom('#platillopastas1').on('click',function(event){
+                    Lungo.Router.section("platillopastas1");
+
+                }); 
+                                    Lungo.dom('#platillopastas2').on('click',function(event){
+                    Lungo.Router.section("platillopastas2");
+
+                });   
+                                    Lungo.dom('#platillopastas3').on('click',function(event){
+                    Lungo.Router.section("platillopastas3");
+
+                }); 
+
+                    Lungo.dom('#botonentrar').on('click', function(event){
+                       var usuario=$$("#txtusuario").val();
+                       var password=$$("#txtpassword").val();
+
+                       var url="http://localhost/diplomado/proyecto/Usuarios.php";
+                       var data={Usuario:usuario,Password:password};
+                       var respuesta=function(resultado){
+                            if(resultado=="Usuario encontrado") 
+                            {
+                         
+                                Lungo.Router.section("menus");
+                            }
+                            else
+                            {
+                                Lungo.Notification.error(
+                                    "Login",                       // Título 
+                                    "Erro usuario o contraseña incorrectos",      // Descripción 
+                                    "remove",                      // Icono 
+                                    2 
+                                );
+                           }
+
+                       }
+                      
+                       Lungo.Service.post(url,data,respuesta);
+
+                });
+        </script>
+    </body>
+</html>
